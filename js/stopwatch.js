@@ -25,14 +25,14 @@ function startStopwatch() {
 }
 
 function pauseStopwatch() {
-	stopTimer();
+	stopStopwatchTimer();
 	stopLapTimer();
 	document.getElementById('pause-stopwatch').style.display = 'none';
 	document.getElementById('start-stopwatch').style.display = '';
 }
 
 function resetStopwatch() {
-	stopTimer();
+	stopStopwatchTimer();
 	stopLapTimer();
 	showResetButton = false;
 	ms = s = m = 0;
@@ -57,7 +57,7 @@ function lap() {
 	lapsContainer.prepend(li);
 }
 
-function stopTimer() {
+function stopStopwatchTimer() {
 	clearInterval(timer);
 	timer = false;
 	stopwatchRunning = false;
