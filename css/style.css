@@ -1,0 +1,314 @@
+html, body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	width: 100%;
+}
+
+.main-container{
+	width: 100%;
+	height: 1080px;
+	position: abolute;
+}
+
+.button{
+	background-color: #c01212;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	position: absolute;
+}
+
+#alarm{
+	padding: 15px 31px;
+	top: 5%;
+	left: 46%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border: 2px solid rgb(255, 255, 255)
+}
+
+#timer{
+	padding: 15px 31px;
+	top: 5%;
+	left: 60%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border: 2px solid rgb(255, 255, 255)
+}
+
+#stopwatch{
+	padding: 15px 15px;
+	top: 5%;
+	left: 53%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border: 2px solid rgb(255, 255, 255)
+}
+
+#home{
+	padding: 15px 31px;
+	top: 5%;
+	left: 39%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border: 2px solid rgb(255, 255, 255)
+}
+
+#about{
+	padding: 15px 31px;
+	top: 5%;
+	left: 64%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border: 2px solid rgb(255, 255, 255)
+}
+
+.set-alarm-button{
+	background-color: #2d2d2d;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	padding: 15px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	position: absolute;
+	top: 65%;
+	left: 60%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border: 2px solid rgb(255, 255, 255)
+  }
+
+.snooze-alarm-button{
+	background-color: #c01212;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	padding: 15px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	position: absolute;
+	top: 72%;
+	left: 47%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border: 2px solid rgb(255, 255, 255)
+}
+
+.stop-alarm-button{
+	background-color: #c01212;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	padding: 15px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	position: absolute;
+	top: 65%;
+	left: 67%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border: 2px solid rgb(255, 255, 255)
+}
+
+h1{
+	width: 100%;
+	margin-top: 10%;
+	position: absolute;
+	font-size: 8vw;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 5px;
+}
+
+#clock{
+	width: 100%;
+	position: absolute;
+	font-size: 10vw;
+	color: white;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 19%;
+}
+
+#time-remaining{
+	width: 50%;
+	position: absolute;
+	font-size: 1vw;
+	color: white;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	top: 65%;
+	left: 45%;
+}
+
+#alarmTime{
+	background-color: #2d2d2d;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	padding: 13px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	position: absolute;
+	top: 65%;
+	left: 48%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border: 2px solid rgb(255, 255, 255)
+}
+
+/* #clock-options{
+	top: 5%;
+    position: relative;
+} */
+
+.timer-button{
+	background-color: #2d2d2d;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	padding: 15px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border: 2px solid rgb(255, 255, 255)
+  }
+
+.stopwatch-button{
+	background-color: #2d2d2d;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	padding: 15px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	position: absolute;
+	top: 55%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border: 2px solid rgb(255, 255, 255)
+}
+
+#start-stopwatch{
+	padding: 15px 19px;
+	top: 55%;
+	left: 50%;
+	background-color: green;
+}
+
+#pause-stopwatch{
+	background-color: rgb(36, 34, 189);
+	top: 55%;
+	left: 50%;
+}
+
+#reset-stopwatch{
+	padding: 15px 16px;
+	top: 55%;
+	left: 44%;
+	background-color: #2d2d2d;
+}
+
+#lap-stopwatch{
+	padding: 15px 23px;
+	top: 55%;
+	left: 56%;
+}
+
+#stopwatch-clock{
+	font-size: 15em;
+	font-family: monospace;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+	color: white;
+}
+
+#lap-times {
+	align-items: center;
+	font-size: 1.5em;
+	font-family: monospace;
+	color: white;
+	list-style: none;
+	position: absolute;
+	top: 60%;
+	left: 800px;
+}
+
+#set-timer-clock {
+	font-size: 15em;
+	font-family: monospace;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+	color: white;
+}
+
+#active-timer-clock {
+	font-size: 15em;
+	font-family: monospace;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+	color: white;
+}
+
+#start-timer {
+	padding: 15px 19px;
+	background-color: green;
+}
+
+#clear-timer {
+	padding: 15px 19px;
+	position: absolute;
+	left: 57%;
+}
+
+#reset-timer {
+	padding: 15px 19px;
+	position: absolute;
+	left: 57%;
+}

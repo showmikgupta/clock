@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<title>Alarm Clock</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@100&display=swap" rel="stylesheet">
+	</head>wewe2123
+	<body onload="realtimeClock()" style="background-image: url(image/pattern-black.png);">
+		<div class="main-container">
+			<h1 id='current-time'>Current Time</h1>
+
+			<div id="clock-options">
+				<button onclick='openHome();' id="home" class='site-options button'>Home</button>
+				<button onclick='openAlarm();' id="alarm" class='site-options button'>Alarm</button>
+				<button onclick='openTimer();' id="timer" class='site-options button'>Timer</button>
+				<button onclick='openStopwatch();' id="stopwatch" class='site-options button'>Stopwatch</button>
+				<!-- <button onclick='openAbout();' id="about" class='site-options button'>About</button> -->
+			</div>
+
+			<div id="clock"></div>
+			<div id="time-remaining" class='alarm-button alarm-button2'></div>
+
+			<input type="datetime-local" id="alarmTime" class='alarm-button button' style="display:none;"/>
+
+			<button onclick="setAlarm(this);" id='set-alarm-button' class="set-alarm-button alarm-button alarm button" style="display:none;">Set an Alarm</button>
+			
+			<div id="alarm-options" style="display:none;">
+				<!-- <button onclick="snoozeAlarm();" id='snooze-button' class="snooze-alarm-button alarm-button button">Snooze</button> -->
+				<button onclick="stopAlarm();" id='stop-button' class="stop-alarm-button alarm-button button">Stop</button>
+			</div>
+
+			<div id='stopwatch-clock' class="stopwatch stopwatch-item" style="display: none;">00:00:00</div>
+			<ul id="lap-times" class="laps stopwatch-item" style='display:none;'></ul>
+
+			<div id="stopwatch-options">
+				<button onclick='startStopwatch();' id='start-stopwatch' class='stopwatch-button stopwatch-item button' style="display:none;">Start</button>
+				<button onclick='pauseStopwatch();' id='pause-stopwatch' class='stopwatch-button stopwatch-item button' style="display:none;">Pause</button>
+				<button onclick='resetStopwatch();' id='reset-stopwatch' class='stopwatch-button stopwatch-item button' style="display:none;">Reset</button>
+				<button onclick='lap();' id='lap-stopwatch' class='stopwatch-button stopwatch-item button' style="display:none;">Lap</button>
+			</div>
+
+			<div id='set-timer-clock' class="timer timer-item" style="display: none;">00h 00m 00s</div>
+			<div id='active-timer-clock' class="timer timer-item" style="display: none;"></div>
+			<div id="timer-options">
+				<button onclick='startTimer();' id='start-timer' class='timer-item timer-button' style='display:none;'>Start</button>
+				<button onclick='pauseTimer();' id='pause-timer' class='timer-item timer-button' style='display:none;'>Pause</button>
+				<button onclick='resetTimer();' id='reset-timer' class='timer-item timer-button' style='display:none;'>Reset</button>
+				<button onclick='clearTimer();' id='clear-timer' class='timer-item timer-button' style='display:none;'>Clear</button>
+				<button onclick='stopTimer();' id='stop-timer' class='timer-item timer-button' style='display:none;'>Stop</button>
+			</div>
+
+		</div>
+
+		<script src="js/script.js"></script>
+		<script src="js/stopwatch.js"></script>
+		<script src="js/alarm.js"></script>
+		<script src="js/timer.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+	</body>
+</html>
