@@ -7,40 +7,6 @@ var alarmRunning = false;
 var stopwatchRunning = false;
 var showResetButton = false;
 
-function realtimeClock() {
-	//get time components
-	var clock = new Date();
-	var hours = clock.getHours();
-	var minutes = clock.getMinutes();
-	var seconds = clock.getSeconds();
-
-	//figure out if its AM or PM
-	var amPM = (hours < 12) ? "AM" : "PM";
-
-	//convert to 12-hour format
-	hours %= 12;
-
-	//pad the correct time components with leading 0
-	if (hours == 0) {
-		hours = 12;
-	} else if (hours < 10) {
-		hours = "0" + hours;
-	}
-
-	if (minutes < 10) {
-		minutes = "0" + minutes;
-	}
-
-	if (seconds < 10) {
-		seconds = "0" + seconds;
-	}
-
-	document.getElementById('clock').innerHTML= hours + ":" + 
-		minutes + ":" + seconds + " " + amPM;
-
-	setTimeout(realtimeClock, 500);
-};
-
 function openHome() {
 	var elements = document.getElementsByClassName('stopwatch-item');
 
