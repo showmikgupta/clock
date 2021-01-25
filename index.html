@@ -6,11 +6,12 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 		<title>Alarm Clock</title>
+		<link rel="stylesheet" href="css/style.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@100&display=swap" rel="stylesheet">
 		<link rel='icon' href='image/favicon.ico' type='image/x-icon'>
 	</head>
-	<body onload="realtimeClock()" style="background-image: url(image/pattern-black.png);">
+	<body onload="tick();" style="background-image: url(image/pattern-black.png);">
 		<div class="main-container">
 			<h1 id='current-time'>Current Time</h1>
 
@@ -56,10 +57,13 @@
 
 		</div>
 
+		<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+		<script type="text/babel" src="js/clock.js"></script>
 		<script src="js/script.js"></script>
 		<script src="js/stopwatch.js"></script>
 		<script src="js/alarm.js"></script>
 		<script src="js/timer.js"></script>
-		<link rel="stylesheet" href="css/style.css">
 	</body>
 </html>
