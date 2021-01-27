@@ -1,14 +1,34 @@
-'use strict';
+class Clock extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {date: new Date()};
+	}
 
-function tick() {
-	const element = (
-		<h1>{new Date().toLocaleTimeString()}</h1>
-	);
+	componentDidMount() {
+		this.timerID = setInterval(
+			() => this.tick(),
+			1000
+		);
+	}
 
-	ReactDOM.render(
-		element,
-		document.getElementById('clock')
-	);
+	componentWillUnmount() {
+		clearInterval(this.timerID);
+	}
+
+	tick() {
+		this.setState({
+			date: new Date()
+		});
+	}
+
+	render() {
+		return (
+			<h1>{this.state.date.toLocaleTimeString()}</h1>
+		)
+	}
 }
 
-setInterval(tick, 1000);
+ReactDOM.render(
+	<Clock />,
+	document.getElementById('clock')
+);
